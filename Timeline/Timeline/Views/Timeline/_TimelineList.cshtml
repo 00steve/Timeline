@@ -1,0 +1,22 @@
+﻿@model List<TimelineApp.Models.Database.Timeline>
+@using TimelineApp.Models.Database;
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Timeline tl in Model)
+        {
+            <tr>
+                <td>@tl.Name</td>
+                <td>@tl.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

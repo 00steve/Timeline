@@ -1,0 +1,11 @@
+﻿@model TimelineApp.Models.UserInterface.TimelineIndex
+@using TimelineApp.Models.UserInterface;
+@{
+    ViewBag.Title = "Timelines";
+}
+
+<h2>Timelines</h2>
+
+
+@Html.Partial("_TimelineList", Model.Timelines)
+
